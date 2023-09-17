@@ -28,14 +28,14 @@
             >;
         };
 
-        lower_layer {
+        Raise_Layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Lower";
+            label = "Raise";
             bindings = <
 &kp TAB    &kp N1      &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &kp LCTRL  &trans      &trans        &trans        &trans        &trans          &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
@@ -44,18 +44,18 @@
             >;
         };
 
-        raise_layer {
+        Lower_Layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Raise";
+            label = "Lower";
             bindings = <
 &kp TAB    &kp EXCL    &kp AT         &kp HASH         &kp DLLR              &kp PRCNT                &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
-&kp LCTRL  &kp CARET   &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp EQUAL      &kp LBKT         &kp RBKT              &kp BSLH               &kp TILDE
-&kp LSHFT  &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3             &kp UNDER  &kp PLUS       &kp LBRC         &kp RBRC              &kp PIPE               &kp GRAVE
+&kp LCTRL  &kp CARET   &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDER  &kp PLUS       &kp LBRC         &kp RBRC              &kp PIPE               &kp TILDE
+&kp LSHFT  &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3             &kp MINUS  &kp EQUAL      &kp LBKT         &kp RBKT              &kp BSLH               &kp GRAVE
                                       &kp LGUI         &trans                &kp SPACE                &kp RET    &mo 3          &kp RALT
             >;
         };
